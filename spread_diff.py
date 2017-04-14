@@ -1,3 +1,5 @@
+#!/usr/bin/env python2
+
 import re
 
 FOOTBALL_RE = re.compile(r'\s+'  # whitespaces
@@ -17,7 +19,7 @@ WEATHER_RE = re.compile(r'^\s+'  # whitespaces
 class DiffSpread(object):
     """
     Class computing spread using file and regexp to parse data from file.
-    Values extracted with regexp must be in this order: name, *values.
+    Values extracted with regexp must be in this order: name, *values (2).
     Method spread(func) outputs name of min/max (func) row in file.
     """
     def __init__(self, regexp, file_name):

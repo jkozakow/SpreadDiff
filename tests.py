@@ -1,3 +1,5 @@
+#!/usr/bin/env python2
+
 from spread_diff import DiffSpread, WEATHER_RE, FOOTBALL_RE
 
 """
